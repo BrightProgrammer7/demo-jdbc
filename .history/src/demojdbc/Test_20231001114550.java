@@ -42,7 +42,7 @@ public class Test {
       cn = DriverManager.getConnection(url, user, password);
 
       // statement creation
-      //  st = (Statement) cn.createStatement();
+      // st = (Statement) cn.createStatement();
       st = cn.createStatement();
 
       String req = "insert into Site values(null,'" + s.getNom() + "')";
@@ -89,14 +89,6 @@ public class Test {
       // statement creation
       st = (Statement) cn.createStatement();
       String req = "select * from Site";
-
-      // request execution
-      //   if (rs != null) {
-      rs = st.executeQuery(req);
-      while (rs.next()) {
-        System.out.print(rs.getInt(1) + "" + rs.getString(2));
-      }
-      //   }
     } catch (SQLException e) {
       System.out.println(e.getMessage());
     } catch (ClassNotFoundException ex) {

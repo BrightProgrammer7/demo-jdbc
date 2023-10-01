@@ -41,9 +41,11 @@ public class Site {
     public String toString() {
         return "Site{" + "id=" + id + ", nom=" + nom + '}';
     }
-
-    // public static void main(String[] args) {
-    // System.out.println("Site");
-    // }
+    
+//     public static void main(String[] args) {
+//        System.out.println("Site");
+//    } 
+    
+    
 
 }

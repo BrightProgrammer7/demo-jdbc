@@ -91,12 +91,12 @@ public class Test {
       String req = "select * from Site";
 
       // request execution
-      //   if (rs != null) {
-      rs = st.executeQuery(req);
-      while (rs.next()) {
-        System.out.print(rs.getInt(1) + "" + rs.getString(2));
+      if (rs != null) {
+        rs = st.executeQuery(req);
+        while (rs.next()) {
+          System.out.print(rs.getInt(1) + "" + rs.getString(2));
+        }
       }
-      //   }
     } catch (SQLException e) {
       System.out.println(e.getMessage());
     } catch (ClassNotFoundException ex) {
