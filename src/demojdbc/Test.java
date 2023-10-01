@@ -26,12 +26,12 @@ public class Test {
     String password = "root";
 
     String url = "jdbc:mysql://localhost:3306/db";
-    //        String url = "jdbc:mysql://localhost:3306/mysql";
+    // String url = "jdbc:mysql://localhost:3306/mysql";
 
     Connection cn = null;
-    //        cn = new Connection();
+    // cn = new Connection();
     Statement st = null;
-    //        st = new Statement();
+    // st = new Statement();
 
     try {
       // drive loading
